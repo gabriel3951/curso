@@ -1,0 +1,9 @@
+name: End-to-end tests
+on: [push]
+  cypress-run:
+    runs-on: windows
+    steps:
+    - name: Checkout
+      uses: actions/checkout
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
